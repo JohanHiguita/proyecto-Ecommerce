@@ -1,0 +1,13 @@
+- Contenedor del nav-bar con un width de 95% para tener espacios a la derecha y a la izquierda.
+- resto del cuerpo de la página (sin nav-bar) row de 4 cols (sección izquierda) y 8 cols (sección derecha).
+
+
+
+
+
+
+
+
+-----------------------------------------------------------
+
+encerrar contenidos de c/col en div.container
