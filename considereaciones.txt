@@ -1,5 +1,6 @@
 - Contenedor del nav-bar con un width de 95% para tener espacios a la derecha y a la izquierda.
 - resto del cuerpo de la página (sin nav-bar) row de 4 cols (sección izquierda) y 8 cols (sección derecha).
+- para ocultar la sección de categorias se uso media query: "@media only screen and (max-width: 992px)", aunque creo que lo mejor era no especificar el tamaño en pixeles (992px), sino usar los tamaños que usa bootstrap: @media (max-width: @screen-md-max), pero no me funcionó. me gustaría saber como hacerlo  
 
 
 
