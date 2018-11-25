@@ -11,4 +11,5 @@
 
 -----------------------------------------------------------
 
-encerrar contenidos de c/col en div.container
+encerrar contenidos de c/col en div.container ok
+md-6 de las cols del modal

@@ -16,12 +16,16 @@
   } 
 
   .izq, .der{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 
   }
   .cont-camisetas{
     margin-top: 15px;
-    border: 1px solid blue;
+ /*   border: 1px solid blue;*/
+  }
+
+  .text_comment{
+    width: 100%;
   }
 
   @media only screen and (max-width: 992px) {
@@ -61,8 +65,10 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
+
   <div class="container">
     <div class="row">
+
       <div class="col-sm-12 col-md-4 izq">
         <form class="" role="search">
           <div class="input-group">
@@ -104,6 +110,7 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-8 der">
+
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -145,6 +152,7 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+
         <div class="row cont-camisetas">
 
           <div class="col-xs-6 col-sm-4">
@@ -155,7 +163,7 @@
                 <p>La camiseta ideal para hipsters.</p>
                 <p>
                   <a href="#" class="btn btn-primary" role="button">$229 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
-                  <a href="#" class="btn btn-default" role="button">Detalles</a>
+                  <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#myModal">Detalles</a>
                 </p>
               </div>
             </div>
@@ -219,14 +227,90 @@
 
         </div>
       </div>
+
     </div>
-
   </div>
-</div>
 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Hipster Ultimate</h4>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-info" role="alert">
+            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+            Este producto está agotado
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <img src="imgs/camiseta-1.jpg" alt="..." class="thumbnail">
+            </div>
+            <div class="col-sm-6">
+              <p>Precio: <b>$299</b></p>
+              <p>Calificación:
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </p>
+              <p>
+                <span class="label label-warning">Hipster</span>
+                <span class="label label-default">Deportivo</span>
+              </p>
+              <p><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>Agregar a los deseos</a></p>
+            </div>
+          </div>
+          <div>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Descripción</a></li>
+              <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Comentarios</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <br><div role="tabpanel" class="tab-pane active" id="home">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.
+              </div><br>
+              <div role="tabpanel" class="tab-pane" id="profile">
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">Germán Escobar comentó hace 2 días</div>
+                  <div class="panel-body">
+                    Esta camiseta está increible, la quiero!
+                  </div>
+                </div>
+                <form action="#">
+                  <textarea class="text_comment form-control" placeholder="Ingresa tu comentario"></textarea>
+                </form>
+
+                
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Comprar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
